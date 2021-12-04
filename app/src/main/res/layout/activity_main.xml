@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border1"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#D50000"
+            android:src="@drawable/female" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="10dp"
+            android:background="#D50000"
+            android:src="@drawable/male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="HEIGHT"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Height"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="70dp"
+                android:gravity="right"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="205dp"
+                android:layout_marginTop="80dp"
+                android:gravity="left"
+                android:text="cm"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/continuousSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="115dp"
+                android:layout_marginEnd="10dp"
+                android:stepSize="1"
+                android:value="0"
+                android:valueFrom="0.0"
+                android:valueTo="200.0"
+                app:thumbColor="#D50000"
+                app:trackColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="305dp"
+            android:background="@drawable/border1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="WEIGHT"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Weight"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Increment_weight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/button"
+                android:src="@drawable/ic_baseline_add_24" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Decrement_weight"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/button"
+                android:src="@drawable/ic_baseline_remove_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="305dp"
+            android:background="@drawable/border1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="AGE"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Age"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="70dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Increment_age"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/button"
+                android:src="@drawable/ic_baseline_add_24" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/Decrement_age"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/button"
+                android:src="@drawable/ic_baseline_remove_24" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="495dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="Calculate Your BMI"
+            android:textColor="#D50000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
